@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Trainline: Locate Stations",
+  "description": "This extension shows a map with the current selected stations on Trainline",
+  "version": "1.0",
+  "icons": { "128": "icon_128.png" },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://www.trainline.fr/search",
+        "*://www.trainline.eu/search",
+        "*://trainline.fr/search",
+        "*://trainline.eu/search"
+      ],
+      "js": ["index.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    "script.js"
+  ],
+  "permissions": [
+    "tabs",
+    "*://trainline.eu/search",
+    "*://trainline.fr/search"
+  ]
+}
