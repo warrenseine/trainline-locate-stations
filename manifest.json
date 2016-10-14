@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Trainline: Locate Stations",
-  "description": "This extension shows a map with the current selected stations on Trainline",
+  "description": "A Chrome extension that displays selected stations on a map when search for tickets on Trainline",
   "version": "1.0",
   "icons": { "128": "icon_128.png" },
   "content_scripts": [
